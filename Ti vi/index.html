@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Phát triển chương trình sử dụng Remote để điều khiển Tivi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <h2>Phát triển chương trình sử dụng Remote để điều khiển Tivi</h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-7">
+                <div class="jumbotron text-center">
+                    a
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="jumbotron text-center">
+                    a
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function Tivi() {
+        this.kenh = [];
+        this.kenh[1] = 'https://youtu.be/ddaEtFOsFeM';
+        this.kenh[2] = 'https://youtu.be/ddaEtFOsFeM';
+        this.kenh[3] = 'https://youtu.be/ddaEtFOsFeM';
+        this.kenh[4] = 'https://youtu.be/ddaEtFOsFeM';
+        this.kenh[5] = 'https://youtu.be/ddaEtFOsFeM';
+        this.kenh[6] = 'https://youtu.be/ddaEtFOsFeM';
+        this.kenh[7] = 'https://youtu.be/ddaEtFOsFeM';
+        this.kenh[8] = 'https://youtu.be/ddaEtFOsFeM';
+        this.kenh[9] = 'https://youtu.be/ddaEtFOsFeM';
+        this.volum = 0;
+        this.status = false;
+    }
+
+    function Remote() {
+        this.kenhs = "";
+        this.chuyenkenh = function(tivi) {
+            switch (this.kenhs) {
+                case 1:
+                    return this.kenh[1];
+                case 2:
+                    return this.kenh[2];
+                case 3:
+                    return this.kenh[3];
+                case 4:
+                    return this.kenh[4];
+                case 5:
+                    return this.kenh[5];
+                case 6:
+                    return this.kenh[6];
+                case 7:
+                    return this.kenh[7];
+                case 8:
+                    return this.kenh[8];
+                case 9:
+                    return this.kenh[9];
+            }
+        }
+    }
+    let remote1 = new Remote(tivi1);
+    let tivi1 = new Tivi();
+</script>
+
+</html>
