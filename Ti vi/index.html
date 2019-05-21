@@ -7,69 +7,103 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Phát triển chương trình sử dụng Remote để điều khiển Tivi</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h2>Phát triển chương trình sử dụng Remote để điều khiển Tivi</h2>
+    <h3>Phát triển chương trình sử dụng Remote để điều khiển Tivi</h3>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-7">
-                <div class="jumbotron text-center">
-                    a
+            <div class="col-9">
+                <div class="text-center">
+                    <div>
+                        <img src="images/imageTV.png">
+                        <iframe src="https://www.youtube.com/watch?v=3fi7uwBU-CE" frameborder="0"></iframe>
+                    </div>
                 </div>
             </div>
-            <div class="col-5">
-                <div class="jumbotron text-center">
-                    a
+            <div class="col-3">
+                <div class="text-center">
+                    <div class="khung">
+                        <div class="menu">
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/flat_round/43/000000/mute.png">&emsp;
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/nolan/50/000000/microphone.png">&emsp;
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/color/48/000000/shutdown.png">
+                            </br>
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/color/48/000000/1-circle-c.png">&emsp;
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/color/48/000000/2-circle-c.png">&emsp;
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/color/48/000000/3-circle-c.png">
+                            <br>
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/color/48/000000/4-circle-c.png">&emsp;
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/color/48/000000/5-circle-c.png">&emsp;
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/color/48/000000/6-circle-c.png">
+                            <br>
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/color/48/000000/7-circle-c.png">&emsp;
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/color/48/000000/8-circle-c.png">&emsp;
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/color/48/000000/9-circle-c.png">
+                            <br>
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/color/48/000000/0-circle-c.png">
+                            <br><br>
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/nolan/48/000000/chevron-up.png">
+                            <br>
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/nolan/48/000000/chevron-left.png">&emsp;
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/ios/48/000000/ok-message-filled.png">&emsp;
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/nolan/48/000000/chevron-right.png">
+                            <br>
+                            <input type="image" id="shutdown" alt="Login" src="https://img.icons8.com/nolan/48/000000/chevron-down.png">
+                            <br><br>
+                            <h4>
+                                <b>Sony - TV</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 </body>
 <script>
-    function Tivi() {
-        this.kenh = [];
-        this.kenh[1] = 'https://youtu.be/ddaEtFOsFeM';
-        this.kenh[2] = 'https://youtu.be/ddaEtFOsFeM';
-        this.kenh[3] = 'https://youtu.be/ddaEtFOsFeM';
-        this.kenh[4] = 'https://youtu.be/ddaEtFOsFeM';
-        this.kenh[5] = 'https://youtu.be/ddaEtFOsFeM';
-        this.kenh[6] = 'https://youtu.be/ddaEtFOsFeM';
-        this.kenh[7] = 'https://youtu.be/ddaEtFOsFeM';
-        this.kenh[8] = 'https://youtu.be/ddaEtFOsFeM';
-        this.kenh[9] = 'https://youtu.be/ddaEtFOsFeM';
-        this.volum = 0;
-        this.status = false;
-    }
-
-    function Remote() {
-        this.kenhs = "";
-        this.chuyenkenh = function(tivi) {
-            switch (this.kenhs) {
-                case 1:
-                    return this.kenh[1];
-                case 2:
-                    return this.kenh[2];
-                case 3:
-                    return this.kenh[3];
-                case 4:
-                    return this.kenh[4];
-                case 5:
-                    return this.kenh[5];
-                case 6:
-                    return this.kenh[6];
-                case 7:
-                    return this.kenh[7];
-                case 8:
-                    return this.kenh[8];
-                case 9:
-                    return this.kenh[9];
+        function Tivi() {
+            this.kenh = [];
+            this.kenh[1] = 'https://youtu.be/ddaEtFOsFeM';
+            this.kenh[2] = 'https://youtu.be/ddaEtFOsFeM';
+            this.kenh[3] = 'https://youtu.be/ddaEtFOsFeM';
+            this.kenh[4] = 'https://youtu.be/ddaEtFOsFeM';
+            this.kenh[5] = 'https://youtu.be/ddaEtFOsFeM';
+            this.kenh[6] = 'https://youtu.be/ddaEtFOsFeM';
+            this.kenh[7] = 'https://youtu.be/ddaEtFOsFeM';
+            this.kenh[8] = 'https://youtu.be/ddaEtFOsFeM';
+            this.kenh[9] = 'https://youtu.be/ddaEtFOsFeM';
+            this.volum = 0;
+            this.status = false;
+        }
+    
+        function Remote() {
+            this.kenhs = "";
+            this.chuyenkenh = function(tivi) {
+                switch (this.kenhs) {
+                    case 1:
+                        return this.kenh[1];
+                    case 2:
+                        return this.kenh[2];
+                    case 3:
+                        return this.kenh[3];
+                    case 4:
+                        return this.kenh[4];
+                    case 5:
+                        return this.kenh[5];
+                    case 6:
+                        return this.kenh[6];
+                    case 7:
+                        return this.kenh[7];
+                    case 8:
+                        return this.kenh[8];
+                    case 9:
+                        return this.kenh[9];
+                }
             }
         }
-    }
-    let remote1 = new Remote(tivi1);
-    let tivi1 = new Tivi();
-</script>
-ok haha
-
+        let remote1 = new Remote(tivi1);
+        let tivi1 = new Tivi();
+    </script>
 </html>
